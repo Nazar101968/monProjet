@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/mise-en-page.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <figure>
+      <img src="./img/images.jpg" alt="Bonjour" />
+      <figcaption>Bonjour</figcaption>
+    </figure>
+
+    <div class="conteneur-tableau">
+      <table border="1" cellspacing="0" cellpadding="4" width="80%">
+        <caption>
+          Emploi du temps
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Journée</th>
+            <th>Lundi</th>
+            <th>Mardi</th>
+            <th>Mercredi</th>
+            <th>Jeudi</th>
+            <th>Vendredi</th>
+            <th>Samedi</th>
+            <th>Dimanche</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr align="center">
+            <th scope="row">Matin</th>
+            <td>Cours</td>
+            <td>Cours</td>
+            <td rowspan="2">TP</td>
+            <td>Cours</td>
+            <td>Cours</td>
+            <td colspan="2" rowspan="2">Repos</td>
+          </tr>
+          <tr>
+            <th scope="row">Après-midi</th>
+            <td>TP</td>
+            <td>TP</td>
+            <td>TP</td>
+            <td>TP</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="8">Tableau non définitif</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <div id="modif-liste">
+      <ul>
+        <li>Element 01</li>
+        <li>Element 02</li>
+        <li>Element 03</li>
+      </ul>
+      <ul>
+        <li>Element 01</li>
+        <li>Element 02</li>
+        <li>Element 03</li>
+      </ul>
+    </div>
+  </body>
+</html>

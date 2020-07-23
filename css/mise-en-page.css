@@ -1,0 +1,73 @@
+/* Body */
+body {
+  width: "100%";
+  font-family: Roboto, sans-serif;
+}
+
+/* Tableu */
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  margin-top: 50px;
+}
+
+thead tr {
+  color: white;
+  background-color: teal;
+}
+
+tfoot tr {
+  color: white;
+  background-color: teal;
+}
+
+tbody {
+  background-color: rgb(203, 255, 255);
+}
+
+tbody tr:nth-child(2) {
+  text-align: center;
+}
+
+tbody tr *:hover {
+  background-color: rgb(37, 97, 37);
+  color: white;
+}
+
+caption {
+  caption-side: bottom;
+  margin-top: 16px;
+}
+/* Image */
+
+figure {
+  border: 1px solid black;
+  padding: 4px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+figcaption {
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* Liste */
+div ul:nth-child(1) {
+  list-style-type: none;
+}
+div {
+  margin-top: 30px;
+}

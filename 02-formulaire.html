@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Inscription formation</legend>
+      <form action="">
+        <h2>Identité</h2>
+        <label for="nom">Nom : </label>
+        <input
+          type="text"
+          name="nom"
+          id="nom"
+          placeholder="DUPONT"
+          required
+          minlength="1"
+        />
+        <br />
+        <label for="prenom">Prénom : </label>
+        <input
+          type="text"
+          name="prenom"
+          id="prenom"
+          placeholder="Eric"
+          required
+          minlength="1"
+        />
+        <br />
+        <label for="dateNaissance">Date de naissance : </label>
+        <input type="date" name="dateNaissance" id="dateNaissance" required />
+        <br />
+        <label for="mail">E-mail : </label>
+        <input
+          type="mail"
+          name="email"
+          id="email"
+          placeholder="monemail@adresse.com"
+          required
+          size="25"
+        />
+        <br />
+        <label for="password"
+          >Entrer un mot de pass (6 caractères minimum) :
+        </label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          minlength="6"
+        />
+        <br />
+        <label for="diplome">Dernier diplôme obtenu : </label>
+        <select name="diplome" id="diplome">
+          <option value="" selected disabled hidden
+            >--séléctionner un diplôme--</option
+          >
+          <option value="b1">B+1</option>
+          <option value="b2">B+2</option>
+          <option value="b3">B+3</option>
+          <option value="b4">B+4</option>
+          <option value="b5">B+5</option>
+        </select>
+        <br />
+        <label for="formation">Formation souhaitée : </label>
+        <select name="formation" id="formation">
+          <option value="" selected disabled hidden
+            >--séléctionner une formation--</option
+          >
+          <option value="f1">Formation 1</option>
+          <option value="f2">Formation 2</option>
+          <option value="f3">Formation 3</option>
+          <option value="f4">Formation 4</option>
+          <option value="f5">Formation 5</option>
+        </select>
+        <br />
+        <h2>Motivations</h2>
+        <label for="notes"
+          >Expliquez pourquoi vous voulez rejoundre la formation
+          selectionnée</label
+        >
+        <br />
+        <textarea
+          id="notes"
+          name="notes"
+          rows="14"
+          cols="155"
+          placeholder="Vos Motivations"
+        ></textarea>
+        <br />
+        <br />
+        <input type="submit" value="Envoyer" />
+        <br />
+      </form>
+    </fieldset>
+  </body>
+</html>
