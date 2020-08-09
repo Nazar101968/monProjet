@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercice 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="bonus.js"></script>
+    <script src="ex_01.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="exercice">
+        <header>
+          1
+        </header>
+        <section>
+          <p>
+            Faire une fonction anonyme qui remplace le contenu du cadre blanc
+            par "Hello World" et qui ne retourne rien.
+          </p>
+        </section>
+        <footer>
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </div>
+        </footer>
+      </div>
+      <nav>
+        <a href="ex_02.html" class="btn next">
+          Exercice Suivant &rarr;
+        </a>
+      </nav>
+    </div>
+    <script type="text/javascript">
+      var toto = function () {
+        var doc = document.querySelector("footer div");
+        doc.innerText = "Hello World";
+      };
+      toto();
+    </script>
+  </body>
+</html>

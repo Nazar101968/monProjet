@@ -1,0 +1,71 @@
+/* ---------------------GROS ECRAN--------------------- */
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+div {
+  width: 24%;
+  margin: 5px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  background-color: rgba(236, 223, 223, 0.479);
+  border-radius: 50%;
+  font-size: 48px;
+  line-height: 3em;
+  text-align: center;
+  width: 3em;
+  margin: 30px;
+}
+
+div:nth-of-type(5n + 1) {
+  background-color: green;
+}
+div:nth-of-type(5n + 2) {
+  background-color: blue;
+}
+div:nth-of-type(5n + 3) {
+  background-color: violet;
+}
+div:nth-of-type(5n + 4) {
+  background-color: yellowgreen;
+}
+div:nth-of-type(5) {
+  background-color: red;
+  width: 100%;
+}
+
+/* -------------------------------TABLETTE------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  div {
+    width: 48%;
+    margin: 5px 0;
+  }
+  div:nth-of-type(5) {
+    width: 98%;
+  }
+}
+
+/* -------------------------------SMARTPHONE------------------------------- */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div {
+    width: 99%;
+    margin: 5px 0;
+  }
+}

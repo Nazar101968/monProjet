@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>first js ex</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="ex_02.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="exercice">
+        <header>
+          2
+        </header>
+        <section>
+          <p>
+            Faire en sorte qu'à chaque clic dans le cadre blanc, un compteur du
+            nombre de clics s'affiche dans ce cadre.
+          </p>
+        </section>
+        <footer>
+          <div></div>
+        </footer>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var cadre = document.querySelector("footer div");
+      var count = 0;
+      cadre.addEventListener("click", function (event) {
+        count++;
+        cadre.innerText = count;
+      });
+    </script>
+  </body>
+</html>

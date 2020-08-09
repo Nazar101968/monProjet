@@ -1,0 +1,67 @@
+.essai01 {
+  background-color: blue;
+  width: 300px;
+  height: 300px;
+}
+
+.essai01:hover {
+  /* we can put in one line like below */
+  /* transition: <transition-property> <transition-duration> <transition-timing-function> <transition-delay>; */
+  transition-property: all;
+  transition-duration: 1.5s;
+  transition-timing-function: ease-in;
+  transform: translate(200px, 0px) rotate(180deg);
+  -moz-transform: translate(200px, 0px) rotate(180deg);
+  -webkit-transform: translate(200px, 0px) rotate(180deg);
+  -ms-transform: translate(200px, 0px) rotate(180deg);
+  -o-transform: translate(200px, 0px) rotate(180deg);
+}
+
+.essai02 {
+  background-color: red;
+  width: 300px;
+  height: 300px;
+}
+
+.essai02:hover {
+  /* animation:  <name> <duration> <timing-function> <delay> <iteration-count> <direction> <fill-mode>,
+<name> <duration> <timing-function> <delay> <iteration-count> <direction> <fill-mode>; */
+  animation-name: animationFrames;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animationFrames {
+  /* from=0% and to=100% */
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+    -moz-transform: translate(0px, 0px) rotate(0deg);
+    -ms-transform: translate(0px, 0px) rotate(0deg);
+    -o-transform: translate(0px, 0px) rotate(0deg);
+  }
+  50% {
+    clip-path: polygon(
+      50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%
+    );
+  }
+  100% {
+    transform: translate(200px, 0px) rotate(180deg);
+    -webkit-transform: translate(200px, 0px) rotate(180deg);
+    -moz-transform: translate(200px, 0px) rotate(180deg);
+    -ms-transform: translate(200px, 0px) rotate(180deg);
+    -o-transform: translate(200px, 0px) rotate(180deg);
+  }
+}
+
+    

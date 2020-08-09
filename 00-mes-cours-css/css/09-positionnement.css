@@ -1,0 +1,56 @@
+/* margin : marges extérieures */
+/* padding : marges intértieures */
+
+div {
+  height: auto;
+  background-color: blue;
+  margin: 50px;
+  padding: 20px;
+  position: relative;
+  color: white;
+}
+
+.red {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  /* position: fix; */
+}
+
+/* Position absulute : sort du flux et se positionne par rapport au premier parent positiononné en relative sinon par rapport à la page*/
+/* Toujours mettre top et left sinon riqued'agir comme un relative */
+
+.orange {
+  height: 200px;
+  width: 200px;
+  background-color: orange;
+  /* position: absolut;
+    top:150px;
+    left:150px;
+    z-index: 1; */
+}
+
+/* Position relative : par rapport à sa position de base dans le flux */
+
+.green {
+  height: 200px;
+  width: 200px;
+  background-color: green;
+}
+.violet {
+  height: 200px;
+  width: 200px;
+  background-color: violet;
+  position: absolut;
+  top: 150px;
+  left: 150px;
+}
+div div:nth-of-type(2n + 1) {
+  border: 10px solid black;
+}
+div div:nth-of-type(2n) {
+  border: 10px solid white;
+}
+div div:nth-of-type(4) {
+  border: 10px solid yellow;
+}

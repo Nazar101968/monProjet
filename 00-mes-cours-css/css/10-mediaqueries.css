@@ -1,0 +1,73 @@
+/* -------------------------------GROS ECRAN PC------------------------------- */
+@media screen and (min-width: 1281px) {
+  main {
+    width: 95%;
+    /* min-height: 100vh; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  div {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  span {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: block;
+    font-size: 48px;
+    height: auto;
+    line-height: 3em;
+    text-align: center;
+    width: auto;
+    padding: 15px;
+  }
+
+  #ecran-classique,
+  #grande-tablette,
+  #petite-tablette,
+  #ecran-smarphone {
+    display: none;
+  }
+
+  div {
+    background-color: green;
+  }
+}
+/* -------------------------------ORDINATEUR LAPTOP------------------------------- */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  main {
+    widows: 95%;
+    /* min-height: 100vh; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* -------------------------------GRANDE TABLETTE------------------------------- */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+/* -------------------------------TABLETTE------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+/* -------------------------------SMARTPHONE------------------------------- */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+}
+
+/* -------------------------------ORDINATEUR LAPTOP------------------------------- */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+}
+/* -------------------------------TABLETTE------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+/* -------------------------------SMARTPHONE------------------------------- */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+}

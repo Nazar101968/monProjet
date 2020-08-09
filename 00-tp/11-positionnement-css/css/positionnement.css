@@ -1,0 +1,46 @@
+* {
+  text-align: center;
+  font-weight: bold;
+}
+header {
+  background-color: red;
+  position: relative;
+  height: 117px;
+}
+nav {
+  background-color: yellow;
+  height: 80px;
+  margin: 0 20px 20px 20px;
+  vertical-align: auto;
+}
+main {
+  background-color: blue;
+  height: 400px;
+  position: relative;
+}
+section {
+  background-color: pink;
+  position: relative;
+  height: 300px;
+  margin: 0 20px 20px 20px;
+}
+
+figure {
+  background-color: rgba(73, 252, 213, 0.705);
+  position: absolute;
+  width: 180px;
+  height: 240px;
+}
+aside {
+  background-color: black;
+  position: absolute;
+  color: white;
+  height: 350px;
+  width: 250px;
+  right: 0px;
+  top: -20px;
+}
+footer {
+  background-color: green;
+  height: 120px;
+}

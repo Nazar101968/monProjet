@@ -1,0 +1,38 @@
+.color {
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  min-height: 200px;
+  border: 1px solid rgb(84, 141, 89);
+  box-shadow: 3px 3px 10px black;
+}
+
+#card1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* z-index: 0; */
+}
+
+#card2 {
+  position: absolute;
+  top: 15px;
+  left: 100px;
+  z-index: -1;
+}
+
+#card3 {
+  position: absolute;
+  top: 0px;
+  left: 200px;
+  z-index: -2;
+}
+
+#card4 {
+  position: absolute;
+  top: 15px;
+  left: 300px;
+  z-index: -3;
+}
